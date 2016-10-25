@@ -1773,6 +1773,8 @@ GameObject:
   - 33: {fileID: 1131708004}
   - 135: {fileID: 1131708003}
   - 23: {fileID: 1131708002}
+  - 95: {fileID: 1131708005}
+  - 114: {fileID: 1131708006}
   m_Layer: 0
   m_Name: Globe
   m_TagString: Untagged
@@ -1786,12 +1788,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1131708000}
-  m_LocalRotation: {x: 0, y: 0, z: -0.27563733, w: 0.96126175}
-  m_LocalPosition: {x: -0.004, y: 0.63, z: -0.003}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.26659572, y: -0.56284904, z: 12.908902}
   m_LocalScale: {x: 0.42, y: 0.42, z: 0.42}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -32}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 1490550802}
+  m_Father: {fileID: 1134065773}
   m_RootOrder: 0
 --- !u!23 &1131708002
 MeshRenderer:
@@ -1841,6 +1843,65 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1131708000}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &1131708005
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1131708000}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bb069562aa73d4a0db4c6d354b3af76b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1131708006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1131708000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25417d8bf1f59504ebb38891f9cc4c63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AnimationName: Spin
+  stateMachine: {fileID: 1131708005}
+--- !u!1 &1134065772
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1134065773}
+  m_Layer: 0
+  m_Name: GlobeParentObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1134065773
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1134065772}
+  m_LocalRotation: {x: 0, y: 0, z: -0.27563733, w: 0.96126175}
+  m_LocalPosition: {x: 0.06, y: 1.26, z: -12.911902}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -32}
+  m_Children:
+  - {fileID: 1131708001}
+  m_Father: {fileID: 1490550802}
+  m_RootOrder: 0
 --- !u!4 &1178052930 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000012164954306, guid: b0060abd905f90c45a9c32f54514a25a,
@@ -3324,7 +3385,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 498412, guid: 970dd4b9371394fb4890965f608d46fd, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.67
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 498412, guid: 970dd4b9371394fb4890965f608d46fd, type: 2}
       propertyPath: m_LocalPosition.z
