@@ -17,7 +17,7 @@ public class TriggerAnimation : MonoBehaviour {
     void Start() {
         if (created) {
             foreach (Camera c in GvrViewer.Instance.GetComponentsInChildren<Camera>()) {
-//                c.enabled = false; // to use the Gvr SDK without adding cameras we have to disable them
+                c.enabled = false; // to use the Gvr SDK without adding cameras we have to disable them
             }
         }
 
