@@ -5,7 +5,7 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: SecondsHand
+  m_Name: HourHand
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -17,14 +17,19 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 240}
         inSlope: {x: 0, y: 0, z: 360}
-        outSlope: {x: 0, y: 0, z: 6}
+        outSlope: {x: 0, y: 0, z: 0.008333334}
         tangentMode: 0
-      - time: 60
-        value: {x: 0, y: 0, z: 360}
-        inSlope: {x: 0, y: 0, z: 6}
-        outSlope: {x: 0, y: 0, z: 360}
+      - time: 1
+        value: {x: 0, y: 0, z: 240.00833}
+        inSlope: {x: 0, y: 0, z: 0.008333335}
+        outSlope: {x: 0, y: 0, z: 0.008333335}
+        tangentMode: 0
+      - time: 43200
+        value: {x: 0, y: 0, z: 600}
+        inSlope: {x: 0, y: 0, z: 0.008333334}
+        outSlope: {x: 0, y: 0, z: 0.008333334}
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -53,7 +58,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 60
+    m_StopTime: 43200
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -77,6 +82,11 @@ AnimationClip:
         inSlope: 0
         outSlope: 0
         tangentMode: 10
+      - time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -92,11 +102,11 @@ AnimationClip:
         inSlope: 0
         outSlope: 0
         tangentMode: 10
-      - time: 60
+      - time: 1
         value: 0
         inSlope: 0
         outSlope: 0
-        tangentMode: 21
+        tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -108,15 +118,15 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 0
+        value: 240
         inSlope: 360
-        outSlope: 6
+        outSlope: 0.008333334
         tangentMode: 21
-      - time: 60
-        value: 360
-        inSlope: 6
-        outSlope: 360
-        tangentMode: 21
+      - time: 43200
+        value: 600
+        inSlope: 0.008333334
+        outSlope: 0.008333334
+        tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
